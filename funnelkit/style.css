@@ -1,0 +1,255 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/* Homepage designing */
+
+.navbar.bg-primary {
+    background-image: linear-gradient(#50b3eb, #2fa4e7 60%, #2c9ad9);
+    height: 10vh;
+}
+
+.container-fluid img {
+    height: 6vh; 
+    vertical-align: middle; 
+    margin-right: 8px; 
+}
+
+.navbar-brand {
+    font-size: 24px; 
+    display: inline-block; 
+}
+
+.nav-link{
+    font-size:18px;
+}
+
+h1{
+    color:#50b3eb;
+    padding-top:10px;   
+}
+
+.section-heading{
+    padding-top:10px;
+    text-align: center;
+    align-items: center;
+}
+
+.table-heading{
+    padding-top:30px;
+    margin-top:4vh;
+    text-align: center;
+    align-items: center;
+}
+
+td{
+    height:12vh;
+}
+
+
+
+.table-active td, .table-active th {
+    vertical-align: middle;
+}
+
+
+
+/* Form Designing */
+
+/* Modal Background Container */
+.container {
+    display: flex; /* Use Flexbox to center the modal */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: fixed; /* Fix position to stay in place during scroll */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: 1000; /* Ensure it is on top of other content */
+    display: none; /* Hidden by default */
+}
+
+/* Modal Form */
+.contact-form{
+    text-align: left;
+    width: 700px; 
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: 6px 7px 10px 3px #2fa4e7;
+    border-radius: 45px;
+    position: relative;
+    z-index: 10; /* Positioned above the background */
+}
+
+.container1 {
+    display: flex; /* Use Flexbox to center the modal */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: fixed; /* Fix position to stay in place during scroll */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: 1000; /* Ensure it is on top of other content */
+    display: none; 
+}
+.container1.show {
+    display: flex; /* Show the modal */
+}
+.edit-form{
+    text-align: left;
+    width: 700px; 
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: 6px 7px 10px 3px #2fa4e7;
+    border-radius: 45px;
+    position: relative;
+    z-index: 10; /* Positioned above the background */
+
+}
+
+
+label{
+    font-size: larger;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/* Basic input box design */
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #2fa4e7 2px;
+    outline: none;
+    transition: border-bottom-color 0.3s, padding 0.3s;
+    padding: 3px;
+    font-size: 16px;
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: #aaa;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* On focus - placeholder fades out and keeps the border style */
+input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Additional styling when input is focused */
+input:focus {
+    border-bottom-color: #2fa4e7;
+    padding-bottom: 10px; /* Slight adjustment to enhance the click feel */
+}
+
+#close-button {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    background: linear-gradient(#50b3eb, #2fa4e7 60%, #2c9ad9);
+    border:  #2fa4e7 1px solid;
+    border-radius: 45px 45px 45px 45px;
+    width: 40px;
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+#close-button:hover {
+    color: rgb(0, 0, 0); 
+}
+
+.image-upload {
+    display: inline-block;
+    position: relative;
+}
+
+.image-upload input[type="file"] {
+    display: none; 
+}
+
+/* .image-upload img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-fit:cover;
+    border: 2px solid #2fa4e7; 
+    cursor: pointer; } */
+
+.image-upload img:hover {
+    opacity: 0.8; 
+}
+
+#image-preview{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-fit:cover;
+    border: 2px solid #2fa4e7; 
+    cursor: pointer;
+}
+
+select{
+    background-color: #ffffff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #2fa4e7;
+    width: 6vw;
+    margin-bottom: 5px;
+}
+
+#submit-button{
+    width: 100%;
+    margin-top: 2vh;
+    background: linear-gradient(#50b3eb, #2fa4e7 60%, #2c9ad9);
+}
+
+#submit-button:hover{
+    color: black;
+    scale: 1.01;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
